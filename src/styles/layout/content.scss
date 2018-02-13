@@ -1,0 +1,121 @@
+//slide show
+.img_mobile{
+    img{
+        width: 100vw;
+    }  
+}
+
+.slide-wrap{
+    .carousel{
+        .carousel-item{
+            img{
+                height: 100vh;
+            }
+        }
+        .slide_btn{     
+            display: block;               
+            position: absolute;
+            width: 100px ;
+            height: 100px ;
+            background: #fff;
+            top: 50%;
+            transform: rotateZ(-45deg);
+            transition: all .3s linear;
+            margin-top: -50px;
+            opacity: 1;
+            i{
+                font-size: 40px;
+                color: $color-arrow;
+                position: absolute;
+                transform-origin: 0 50%;
+                top: 50%;
+                left: 50%;
+                margin-top:-18px;
+            }
+            &:hover i{
+                color: $color-arr-hov;
+            }
+        }
+        .left-btn{                  
+            left: -50px;                     
+            & > i{
+                transform: rotateZ(45deg);    
+            }
+        }
+        .right-btn{
+            right: -50px;
+            & > i{
+                transform: rotateZ(225deg);
+            }
+        }
+    }     
+}
+
+
+    // Product description
+
+.content-section{
+    .content-section_main{
+        
+    }
+    
+}
+.content-section_item{
+    padding-top: 50px;
+    h3{
+        display: inline-block;
+        position: relative;
+        margin-bottom: 40px;
+    }
+    h3.under_line::after{
+        display: block;
+        position: absolute;
+        content: "";
+        bottom: -25px;
+        right: 0;
+        width: 100vh;
+        border: 2px solid $color-logo;
+    }  
+}
+.content-section_item:first-child{
+    padding-top: 100px;
+}
+
+
+.contacts{
+    padding-top: 100px;
+    padding-bottom: 90px;
+    background: #f5f5f5;
+    position: relative;
+    width: 100vw;
+    &:after{
+        position: absolute;
+        top: 0;
+        left: 100%;
+        bottom: 0;
+        content: "";
+        width: 50vw;
+        background: #f5f5f5;
+    }
+}   
+
+
+  // GOOGLE MAP
+
+#map{
+    align-self: center;
+    display: block;
+    height: 435px;
+    width: 100vw;
+}
+
+  // Footer
+
+.primary-footer{
+    text-align: center;
+    padding: 33px 0;
+    small{
+        font-size: 14px;
+        
+    }
+}
