@@ -1,56 +1,49 @@
 //slide show
-.img_mobile{
-    img{
-        width: 100vw;
-    }  
-}
 
-.slide-wrap{
-    .carousel{
-        .carousel-item{
-            img{
-                height: 100vh;
-            }
+
+.carousel{
+    .carousel-item{
+        img{
+            height: 100vh;
         }
-        .slide_btn{     
-            display: block;               
+    }
+    .slide_btn{     
+        display: block;               
+        position: absolute;
+        width: 100px ;
+        height: 100px ;
+        background: #fff;
+        top: 50%;
+        transform: rotateZ(-45deg);
+        transition: all .3s linear;
+        margin-top: -50px;
+        opacity: 1;
+        i{
+            font-size: 40px;
+            color: $color-arrow;
             position: absolute;
-            width: 100px ;
-            height: 100px ;
-            background: #fff;
+            transform-origin: 0 50%;
             top: 50%;
-            transform: rotateZ(-45deg);
-            transition: all .3s linear;
-            margin-top: -50px;
-            opacity: 1;
-            i{
-                font-size: 40px;
-                color: $color-arrow;
-                position: absolute;
-                transform-origin: 0 50%;
-                top: 50%;
-                left: 50%;
-                margin-top:-18px;
-            }
-            &:hover i{
-                color: $color-arr-hov;
-            }
+            left: 50%;
+            margin-top:-18px;
         }
-        .left-btn{                  
-            left: -50px;                     
-            & > i{
-                transform: rotateZ(45deg);    
-            }
+        &:hover i{
+            color: $color-arr-hov;
         }
-        .right-btn{
-            right: -50px;
-            & > i{
-                transform: rotateZ(225deg);
-            }
+    }
+    .left-btn{                  
+        left: -50px;                     
+        & > i{
+            transform: rotateZ(45deg);    
         }
-    }     
-}
-
+    }
+    .right-btn{
+        right: -50px;
+        & > i{
+            transform: rotateZ(225deg);
+        }
+    }
+}     
 
     // Product description
 

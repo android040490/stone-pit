@@ -3,13 +3,13 @@ import * as jQuery from "jquery";
 import "popper.js";
 import "bootstrap";
 
-var slider = $(".slide-show_section") ;
+var slider = $(".slide-show") ;
 $(function () {
     $(window).resize(function () {
 
         if (slider.width() < 1200 & slider.css("display") != "none") {
 
-            $('.wrapper').css('max-width', $('.slide-show_section').css('width'))
+            $('.wrapper').css('max-width', $('.slide-show').css('width'))
         }
 
         else {
@@ -21,7 +21,7 @@ $(function () {
 
     //  Page navigation
 
-    $(".navigation ul").on("click","a", function (event) {
+    $(".primary-header_navigation ul").on("click","a", function (event) {
 
         event.preventDefault();
 

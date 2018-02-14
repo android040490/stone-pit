@@ -13,11 +13,12 @@
 
 <body>
 
-  <header class="d-flex flex-column flex-sm-row primary-header  wrapper">
-    <div class="logo ">
+  <header class="d-flex flex-column flex-md-row primary-header  wrapper">
+    <div class="primary-header_logo ">
       <h1>Богдановский<br><span>карьер</span></h1>
     </div>   
-    <nav class="navigation flex-column align-items-center align-items-xl-end">
+    <div class="banner_mobile d-block d-md-none"><img src="images/foto.jpg" alt=""></div>
+    <nav class="primary-header_navigation flex-column align-items-center align-items-xl-end">
       <ul class="d-flex flex-wrap flex-md-nowrap">
         <li><a href="#production">Производство</a></li>
         <li><a href="#address">Адрес карьера</a></li>
@@ -39,9 +40,8 @@
           <!--Slider CAROUSEL -->
 
   <section class="container flex-wrap justify-content-center  content">
-    <div class="img_mobile d-block d-sm-none"><img src="images/foto.jpg" alt=""></div>
-
-    <div class="slide-wrap d-none d-sm-block  slide-show_section">
+  
+    <div class="slide-wrap d-none d-md-block  slide-show">
       
         <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
           <div class="carousel-inner">
@@ -57,7 +57,6 @@
           </a>
           <a class="carousel-control-next  slide_btn right-btn" href="#carouselExampleControls" role="button" data-slide="next">
               <i class="fas fa-arrow-left"></i>
-    
           </a>
         </div>
     </div>
@@ -105,9 +104,7 @@
 
   <footer class="primary-footer">
     <small>© 2015, Copyright</small>
-
   </footer>
-
 
 
   <script src="../dist/bundle.js"></script>

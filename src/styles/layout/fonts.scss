@@ -20,7 +20,7 @@ ul{
 
 
 .primary-header{
-    .logo{
+    .primary-header_logo{
         padding-top: 40px;
         h1{
             text-shadow: 0 2px 6px rgba(0, 0, 0, 1);
@@ -35,7 +35,7 @@ ul{
             }
         }
     }
-    .navigation{
+    .primary-header_navigation{
         padding-top: 34px;
         ul{
             a{
@@ -53,7 +53,6 @@ ul{
             color: $color-btn1;
             line-height: 50%;
             font-size: 18px;
-            font-weight: 5  00;
         }
     }
 }
