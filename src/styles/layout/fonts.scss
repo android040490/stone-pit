@@ -3,8 +3,7 @@
 
 $font-page2: 'Fira Sans', sans-serif;
 $font-page: 'Roboto', sans-serif;
-$color-logo: #ffea00;
-$color-btn1: #f9c44e;
+
 
 body{
     font-size: 16px;
@@ -19,87 +18,3 @@ ul{
 }
 
 
-.primary-header{
-    .primary-header_logo{
-        padding-top: 40px;
-        h1{
-            text-shadow: 0 2px 6px rgba(0, 0, 0, 1);
-            font-family: $font-page;
-            font-size: 20px;
-            color: #fff;
-            span{
-                font-family: $font-page2;
-                font-size: 48px;
-                color: $color-logo;
-                text-transform: uppercase;
-            }
-        }
-    }
-    .primary-header_navigation{
-        padding-top: 34px;
-        ul{
-            a{
-                color: #000;
-                font-weight: 300;
-                line-height: 100%;
-                font-size: 30px;
-                font-family: $font-page;
-                text-transform: uppercase;
-            }
-        }
-        .nav-btn{
-            font-family: $font-page;
-            font-weight: 600;
-            color: $color-btn1;
-            line-height: 50%;
-            font-size: 18px;
-        }
-    }
-}
-
-        // CONTENT
-.content-section_item{
-    h3{
-        font-family: $font-page;
-        text-transform: uppercase;
-        font-size: 30px;     
-    }
-    p{
-        text-align: justify;
-        font-size: 16px;
-        margin-top: 30px;
-        span{
-            font-weight: 800;
-        }
-        i{
-            color: $color-logo;
-            font-size: 18px;
-            padding-right: 10px;
-        }
-    }
-}
-
-.contacts{
-    h3{
-        font-family: $font-page;
-        text-transform: uppercase;
-        font-size: 30px; 
-        padding-bottom: 20px;    
-    }
-    .phone{
-        span{
-            font-weight: bold;
-        }
-        li{
-            padding: 8px 0;
-        }
-    }
-}
-
-// Footer
-.primary-footer{
-    text-align: center;
-    small{
-        font-size: 14px;
-    }
-}

@@ -33,13 +33,17 @@ $(function () {
 
     });
 
-    // modal-window
-
-    $("#modal-win-active, .modal-window_button").click(function(){
-
-        $('.modal-window').toggleClass('modal-window-hide');
+    // Open popup window
+    $("#open-popup").on('click', function () {
+        $(".popup-window").slideDown(400);
+    })
+    // Close popup window
+    $(".popup-window__close-btn").on("click", function () {
+        $(".popup-window").slideUp(400);
     })
 });
+
+
 
 // google maps
 

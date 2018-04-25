@@ -14,28 +14,19 @@
 <body>
 
   <header class="d-flex flex-column flex-md-row primary-header  wrapper">
-    <div class="primary-header_logo ">
+    <div class="primary-header_logo m-lg-0 m-3">
       <h1>Богдановский<br><span>карьер</span></h1>
     </div>   
     <div class="banner_mobile d-block d-md-none"><img src="images/foto.jpg" alt=""></div>
-    <nav class="primary-header_navigation flex-column align-items-center align-items-xl-end">
-      <ul class="d-flex flex-wrap flex-md-nowrap">
-        <li><a href="#production">Производство</a></li>
-        <li><a href="#address">Адрес карьера</a></li>
+    <nav class="primary-header_navigation flex-column  align-items-center align-items-xl-end">
+      <ul class="d-flex flex-column flex-md-row flex-wrap flex-md-nowrap">
+        <li class=" m-2 m-md-0"><a href="#production">Производство</a></li>
+        <li class=" m-2 m-md-0"><a href="#address">Адрес карьера</a></li>
       </ul>
-      <a href="#" id="modal-win-active" class="nav-btn">Заказать звонок</a>
+      <a href="#" id="open-popup" class="nav-btn">Заказать звонок</a>
     </nav>
   </header>
 
-          <!-- Modal Window -->
-
-  <div class="modal-window modal-window-hide">
-    <div class="modal-window_message">
-      <h4>Тест</h4>
-      <a href="#" class="modal-window_button">Закрыть</a>
-    </div>
-    
-  </div>
   
           <!--Slider CAROUSEL -->
 
@@ -105,6 +96,26 @@
   <footer class="primary-footer">
     <small>© 2015, Copyright</small>
   </footer>
+
+  <!-- POPUP WINDOW -->
+  <div class="popup-window">
+    <div class="popup-window__wrapper">
+      <div class="popup-window__window">
+        <div class="popup-window__close-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M323.1 441l53.9-53.9c9.4-9.4 9.4-24.5 0-33.9L279.8 256l97.2-97.2c9.4-9.4 9.4-24.5 0-33.9L323.1 71c-9.4-9.4-24.5-9.4-33.9 0L192 168.2 94.8 71c-9.4-9.4-24.5-9.4-33.9 0L7 124.9c-9.4 9.4-9.4 24.5 0 33.9l97.2 97.2L7 353.2c-9.4 9.4-9.4 24.5 0 33.9L60.9 441c9.4 9.4 24.5 9.4 33.9 0l97.2-97.2 97.2 97.2c9.3 9.3 24.5 9.3 33.9 0z"/></svg>
+          
+        </div>
+        <div class="popup-window__form">
+          <form action="">
+            <input class="popup-window__input" type="text" name="login" placeholder="Имя">
+            <input class="popup-window__input" type="tel" name="phone" placeholder="Телефон">
+            <input class="popup-window__input" type="email" name="email" placeholder="Email">
+            <input type="submit" value="Заказать звонок">
+          </form>
+        </div>
+      </div>
+    </div>
+</div>
 
 
   <script src="../dist/bundle.js"></script>
